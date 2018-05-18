@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+html {
+	height: 100%;
+}
+body {
+    margin: 0;
+    background-image: url(column.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.header {
+    background-image: url(header.jpg);
+    padding: 20px;
+    text-align: center;
+    color: #BDBDBD;
+    margin: auto;
+    font-size: 22px; 
+    font-family: "IM Fell English SC";  
+    
+}
+
+.column {
+    font-family: "Verdana";
+    font-size: 15px;
+    background-image: url(tausta.png);
+    background-size: cover;
+    padding: 10px;
+    width: 60%;
+    height: 100%;
+    display: block;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #424242;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #1C1C1C;
+}
+
+.brutto {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	background-image: url(header.jpg);
+	bottom: 0;
+    font-family: "IM Fell English SC";
+    position: relative;
+    width: 100%;
+   	color: #BDBDBD;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+}
